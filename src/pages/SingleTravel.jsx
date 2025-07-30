@@ -143,7 +143,28 @@ export default function SingleTravel() {
             <button type="submit" className="btn btn-primary">Invia</button>
           </form>
         </div>
+        <section className="container my-5">
+            <h2 className="text-center mb-5">Come funziona</h2>
+            <div className="row text-center">
+              <div className="col-md-4">
+                <i className="bi bi-search fs-1 text-primary mb-3"></i>
+                <h5 className="fw-bold">1. Cerca la destinazione</h5>
+                <p>Esplora centinaia di mete in tutto il mondo, filtrando per tipo di viaggio, budget o ispirazione.</p>
+              </div>
+              <div className="col-md-4">
+                <i className="bi bi-bar-chart-line fs-1 text-success mb-3"></i>
+                <h5 className="fw-bold">2. Confronta le offerte</h5>
+                <p>Visualizza le opzioni più convenienti e confronta le esperienze per trovare quella perfetta per te.</p>
+              </div>
+              <div className="col-md-4">
+                <i className="bi bi-airplane fs-1 text-danger mb-3"></i>
+                <h5 className="fw-bold">3. Prenota e parti</h5>
+                <p>Un clic e sei in viaggio. Tutto chiaro, tutto semplice, tutto pronto per farti vivere il mondo.</p>
+              </div>
+            </div>
+          </section>
     </div>
+
   );
 }
 
