@@ -17,7 +17,7 @@ export function GlobalProvider({children}){
         if (!res.ok) throw new Error("Errore nella risposta del server");
         const data = await res.json();
         setTravel(data);
-        setError(null); // ✅ Pulisci errori vecchi
+        setError(null); 
       } catch (error) {
         console.error("Errore nel fetch", error);
         setError("Errore nel caricamento dei viaggi 😓");

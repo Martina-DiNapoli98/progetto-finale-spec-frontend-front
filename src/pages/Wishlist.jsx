@@ -27,8 +27,6 @@ export default function Wishlist() {
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title text-primary">{trip.title}</h5>
                   <p className="text-muted text-uppercase small">{trip.category}</p>
-                  <p><strong>Durata:</strong> {trip.durationDays} giorni</p>
-                  <p><strong>Prezzo:</strong> €{trip.price}</p>
                   <div className="mt-auto d-flex justify-content-between align-items-center">
 
                     {/* RITORNIAMO ALLA PAGINA DEI DETTAGLI */}
