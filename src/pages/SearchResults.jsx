@@ -12,7 +12,7 @@ export default function SearchResultsList() {
   if (!search.trim()) return null;
 
   if (filteredTravel.length === 0) {
-    return <p className="text-danger mt-3">Nessun viaggio trovato 🥲</p>;
+    return <p className="text-danger mt-3">Nessun viaggio trovato </p>;
   }
 
   return (

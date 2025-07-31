@@ -17,8 +17,6 @@ export default function Searchbar(){
                     boxShadow: "none",
                     transition: "box-shadow 0.3s ease",
                     }}
-                    onFocus={e => e.target.style.boxShadow = "0 0 10px rgb(188, 179, 79)"}
-                    onBlur={e => e.target.style.boxShadow = "none"}
                 />
         </div>
         </>

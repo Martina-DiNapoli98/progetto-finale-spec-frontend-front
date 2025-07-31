@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="d-flex align-items-center gap-3">
         <NavLink className="nav-link fw-semibold ml-2" to="/">Home</NavLink>
         <NavLink className="nav-link fw-semibold" to="/chi-siamo">About</NavLink>
-        <NavLink to="/confronta" className="p-1 nav-link fw-semibold">Confronta</NavLink>
+        <NavLink to="/confronta" className="p-1 nav-link fw-semibold">Compare</NavLink>
         <NavLink to="/preferiti">
           <button
             className="btn btn-outline-danger position-relative"

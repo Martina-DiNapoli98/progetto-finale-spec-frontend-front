@@ -20,7 +20,7 @@ export function GlobalProvider({children}){
         setError(null); 
       } catch (error) {
         console.error("Errore nel fetch", error);
-        setError("Errore nel caricamento dei viaggi 😓");
+        setError("Errore nel caricamento dei viaggi");
       }
     };
     fetchData();
@@ -58,6 +58,20 @@ export function GlobalProvider({children}){
     }, [travel, search, selected, sortOrder]);
 
 
+
+      /* DEBOUNCE */
+    function debounce(callback, delay) {
+              let timer;
+              return (value) => {
+              clearTimeout(timer);
+              timer = setTimeout(() => {
+              callback(value);
+              }, delay);
+          };
+      }
+
+    const debounceInput = useCallback(debounce(setSearch, 500), [])
+
   /* FETCH FOR SINGLE TRAVEL */
 
 const [selectedTrip, setSelectedTrip] = useState(null);
@@ -73,20 +87,7 @@ const fetchSingleTrip = async (id) => {
   }
 };
 
-  /* DEBOUNCE */
-   function debounce(callback, delay) {
-            let timer;
-            return (value) => {
-            clearTimeout(timer);
-            timer = setTimeout(() => {
-            callback(value);
-            }, delay);
-        };
-    }
 
-    const debounceInput = useCallback(debounce(setSearch, 500), [])
-
-    
 
     /* AGGIUNGI AI PREFERITI + LOCAL STORAGE */
     

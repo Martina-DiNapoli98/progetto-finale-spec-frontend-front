@@ -16,9 +16,9 @@ export default function Travel() {
 
   /* RESETTO LA RICERCA QUANDO ANDIAMO NELLA PAGINA DI TUTTI I VIAGGI */
   
-   useEffect(() => {
-    setSearch(""); 
-  }, []);
+    useEffect(() => {
+      setSearch(""); 
+    }, []);
 
 
   return (
