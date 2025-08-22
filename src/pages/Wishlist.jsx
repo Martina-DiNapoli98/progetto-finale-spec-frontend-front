@@ -1,6 +1,6 @@
 import { useGlobalContext } from "../Context/GlobalContext";
 import { Link } from "react-router-dom";
-import "../css/Wishlist.css"
+
 
 export default function Wishlist() {
   const { favorites, compare, addCompare, removeFavorite } = useGlobalContext();
