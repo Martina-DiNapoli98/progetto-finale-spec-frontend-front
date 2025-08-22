@@ -315,4 +315,8 @@ img:hover {
   .hide-title-mobile {
     display: none !important;
   }
+  .logo {
+    height: 45px !important;
+    margin-right: 10px !important;
+  }
 }
