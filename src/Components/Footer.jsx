@@ -10,7 +10,7 @@ export default function Footer() {
               src="logo.png"
               alt="Logo"
               style={{ height: "150px" }}
-              className="mb-2"
+              className="mb-2 logo"
             />
             <p className="small text-muted text-dark">
               Esplora il mondo con noi. Viaggi unici, emozioni autentici.

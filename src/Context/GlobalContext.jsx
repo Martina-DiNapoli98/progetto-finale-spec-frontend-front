@@ -55,7 +55,7 @@ export function GlobalProvider({children}){
         }
 
         return filtered;
-    }, [travel, search, selected, sortOrder]);
+     }, [travel, search, selected, sortOrder]);
 
 
 
@@ -76,18 +76,16 @@ export function GlobalProvider({children}){
 
 const [selectedTrip, setSelectedTrip] = useState(null);
 
-const fetchSingleTrip = async (id) => {
-  try {
-    const res = await fetch(`http://localhost:3001/trips/${id}`);
-    const data = await res.json();
-    setSelectedTrip(data);
-  } catch (error) {
-    console.error("Errore nel fetch del dettaglio", error);
-    setSelectedTrip(null);
-  }
-};
-
-
+  const fetchSingleTrip = async (id) => {
+    try {
+      const res = await fetch(`http://localhost:3001/trips/${id}`);
+      const data = await res.json();
+      setSelectedTrip(data);
+    } catch (error) {
+      console.error("Errore nel fetch del dettaglio", error);
+      setSelectedTrip(null);
+    }
+  };
 
     /* AGGIUNGI AI PREFERITI + LOCAL STORAGE */
     
@@ -112,31 +110,31 @@ const fetchSingleTrip = async (id) => {
 
 
     /* CONFRONTA */
-const [compare, setCompare] = useState(() => {
-  try {
-    const saved = localStorage.getItem("compare");
-    const parsed = JSON.parse(saved);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch (err) {
-    console.error("Errore parsing compare:", err);
-    return [];
-  }
-});
+    const [compare, setCompare] = useState(() => {
+      try {
+        const saved = localStorage.getItem("compare");
+        const parsed = JSON.parse(saved);
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (err) {
+        console.error("Errore parsing compare:", err);
+        return [];
+      }
+    });
 
-useEffect(() => {
-  localStorage.setItem("compare", JSON.stringify(compare));
-}, [compare]);
+    useEffect(() => {
+      localStorage.setItem("compare", JSON.stringify(compare));
+    }, [compare]);
 
-const addCompare = (trip) => {
-  setCompare(prev => {
-    if (prev.some(t => t.id === trip.id)) return prev;
-    return [...prev, trip];
-  });
-};
+    const addCompare = (trip) => {
+      setCompare(prev => {
+        if (prev.some(t => t.id === trip.id)) return prev;
+        return [...prev, trip];
+      });
+    };
 
-const removeCompare = (tripId) => {
-  setCompare(prev => prev.filter(t => t.id !== tripId));
-};
+    const removeCompare = (tripId) => {
+      setCompare(prev => prev.filter(t => t.id !== tripId));
+    };
 
 
 

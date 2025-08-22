@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./pages/Home"
 import DefaultLayout from "./Layouts/DefaultLayout"
 import {GlobalProvider} from "./Context/GlobalContext"
+import Home from "./pages/Home"
 import AllTravel from "./pages/AllTravel"
 import SingleTravel from "./pages/SingleTravel"
 import CompareTravel from "./pages/CompareTravel"
@@ -22,7 +22,7 @@ function App() {
                 <Route path="/preferiti" element={<Wishlist />} />
                 <Route path="/confronta" element={<CompareTravel />} />
                 <Route path="/chi-siamo" element={<About />} />
-              </Route>
+            </Route>
           </Routes>
         </BrowserRouter>
       </GlobalProvider>

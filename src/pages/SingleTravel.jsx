@@ -125,46 +125,80 @@ export default function SingleTravel() {
             Esplora altri viaggi
           </Link>
       </div>
+
       <div className="contact-us mt-5 p-4 border rounded-3 bg-light">
           <h4>Se hai dubbi, puoi scriverci</h4>
           <form>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">Nome</label>
-              <input type="text" className="form-control" id="name" placeholder="Il tuo nome" required />
+                <input type="text" 
+                  className="form-control" 
+                  id="name" 
+                  placeholder="Il tuo nome" 
+                  required 
+                />
             </div>
+
             <div className="mb-3">
               <label htmlFor="email" className="form-label">Email</label>
-              <input type="email" className="form-control" id="email" placeholder="La tua email" required />
+              <input 
+                type="email" 
+                className="form-control" 
+                id="email" 
+                placeholder="La tua email" 
+                required 
+              />
             </div>
+
             <div className="mb-3">
               <label htmlFor="message" className="form-label">Messaggio</label>
-              <textarea className="form-control" id="message" rows="3" placeholder="Scrivi qui il tuo dubbio" required></textarea>
+                <textarea 
+                  className="form-control" 
+                  id="message" 
+                  rows="3" 
+                  placeholder="Scrivi qui il tuo dubbio" 
+                  required>
+                </textarea>
             </div>
             <button type="submit" className="btn btn-primary">Invia</button>
           </form>
+
         </div>
         <section className="container my-5">
-            <h2 className="text-center mb-5">Come funziona</h2>
+            <h2 className="text-center mb-5">
+              Come funziona
+            </h2>
             <div className="row text-center">
               <div className="col-md-4">
                 <i className="bi bi-search fs-1 text-primary mb-3"></i>
-                <h5 className="fw-bold">1. Cerca la destinazione</h5>
-                <p>Esplora centinaia di mete in tutto il mondo, filtrando per tipo di viaggio, budget o ispirazione.</p>
+                <h5 className="fw-bold">
+                  1. Cerca la destinazione
+                </h5>
+                <p>
+                  Esplora centinaia di mete in tutto il mondo, filtrando per tipo di viaggio, budget o ispirazione.
+                </p>
               </div>
               <div className="col-md-4">
                 <i className="bi bi-bar-chart-line fs-1 text-success mb-3"></i>
-                <h5 className="fw-bold">2. Confronta le offerte</h5>
-                <p>Visualizza le opzioni più convenienti e confronta le esperienze per trovare quella perfetta per te.</p>
+                <h5 className="fw-bold">
+                  2. Confronta le offerte
+                </h5>
+                <p>
+                  Visualizza le opzioni più convenienti e confronta le esperienze per trovare quella perfetta per te.
+                </p>
               </div>
               <div className="col-md-4">
                 <i className="bi bi-airplane fs-1 text-danger mb-3"></i>
-                <h5 className="fw-bold">3. Prenota e parti</h5>
-                <p>Un clic e sei in viaggio. Tutto chiaro, tutto semplice, tutto pronto per farti vivere il mondo.</p>
+                <h5 className="fw-bold">
+                  3. Prenota e parti
+                </h5>
+                <p>
+                  Un clic e sei in viaggio. Tutto chiaro, tutto semplice, tutto pronto per farti vivere il mondo.
+                </p>
               </div>
             </div>
           </section>
     </div>
-
   );
 }
 

@@ -12,8 +12,8 @@ export default function Navbar() {
         <img
           src="logo.png"
           alt="Logo"
-          style={{ height: "70px", marginRight: "40px" }}
-          className="mb-2 p-1"
+          style={{ height: "100px", marginRight: "40px" }}
+          className=" logo"
         />
         <h4 className="fw-semibold mb-0">ViaggiVivi</h4>
       </div>

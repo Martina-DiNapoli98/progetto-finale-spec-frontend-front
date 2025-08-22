@@ -1,0 +1,112 @@
+/* ====== HERO SECTION ====== */
+
+
+.hero .title-home {
+  color: #469d7d;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero .lead {
+  color: #8f8aa4;
+}
+
+.btn-home {
+  background: linear-gradient(90deg, #605299 0%, #7cb9ec 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-home:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 120, 180, 0.4);
+}
+
+/* ====== CARDS "PERCHÉ VIAGGIARE CON NOI" ====== */
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card i {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.card:hover i {
+  transform: scale(1.2);
+  color: #ff758c;
+}
+
+/* ====== TESTIMONIANZE ====== */
+blockquote {
+  background: #f7f9fc;
+  padding: 20px;
+  border-left: 5px solid #ff758c;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+blockquote:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* ====== CONTAINER E SEZIONI ====== */
+.container {
+  max-width: 1200px;
+}
+
+.carousel-section {
+  margin-bottom: 50px;
+}
+
+/* ====== GRADIENT SU TITOLO SEZIONI ====== */
+h2 {
+   background: linear-gradient(90deg, #605299 0%, #7cb9ec 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+/* ====== EFFETTI SCROLL ====== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== BOTTONI PICCOLI ====== */
+.btn-sm {
+  transition: all 0.3s;
+}
+
+.btn-sm:hover {
+  transform: scale(1.05);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .hero .title-home {
+    font-size: 2rem;
+  }
+
+  .btn-home {
+    padding: 10px 25px;
+  }
+}
+
+

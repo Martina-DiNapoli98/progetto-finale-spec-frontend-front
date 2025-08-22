@@ -2,6 +2,7 @@ import Carousel from "../Components/Carousel";
 import { useGlobalContext } from "../Context/GlobalContext";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import "../css/home.css"
 
 
 export default function Home() {
