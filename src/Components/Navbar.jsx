@@ -15,7 +15,7 @@ export default function Navbar() {
           style={{ height: "100px", marginRight: "40px" }}
           className=" logo"
         />
-        <h4 className="fw-semibold mb-0">ViaggiVivi</h4>
+        <h4 className="fw-semibold mb-0 d-none d-sm-block">ViaggiVivi</h4>
       </div>
       <div className="d-flex align-items-center gap-3">
         <NavLink className="nav-link fw-semibold ml-2" to="/">Home</NavLink>

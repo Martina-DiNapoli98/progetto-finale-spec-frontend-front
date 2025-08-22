@@ -13,7 +13,7 @@ export function GlobalProvider({children}){
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`http://localhost:3001/trips`);
+        const res = await fetch(`https://progetto-finale-spec-frontend-back-production.up.railway.app/trips`);
         if (!res.ok) throw new Error("Errore nella risposta del server");
         const data = await res.json();
         setTravel(data);
@@ -78,9 +78,10 @@ const [selectedTrip, setSelectedTrip] = useState(null);
 
   const fetchSingleTrip = async (id) => {
     try {
-      const res = await fetch(`http://localhost:3001/trips/${id}`);
+      const res = await fetch(`https://progetto-finale-spec-frontend-back-production.up.railway.app/trips/${id}`);
       const data = await res.json();
       setSelectedTrip(data);
+
     } catch (error) {
       console.error("Errore nel fetch del dettaglio", error);
       setSelectedTrip(null);

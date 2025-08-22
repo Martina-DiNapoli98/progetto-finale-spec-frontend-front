@@ -310,3 +310,9 @@ img:hover {
   padding: 5px 8px;
   border-radius: 12px;
 }
+
+@media (max-width: 570px) {
+  .hide-title-mobile {
+    display: none !important;
+  }
+}
